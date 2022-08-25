@@ -10,6 +10,9 @@ module.exports = {
         'hacker': '#FF7600',
         'hlight': '#E7FBFF',
       },
+      fontFamily: {
+        custom: ["Source Sans Pro, sans-serif"],
+      },
   },
 },
   plugins: [],
