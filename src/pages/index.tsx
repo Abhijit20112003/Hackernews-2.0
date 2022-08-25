@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         <span className="text-hacker mx-2"> looks</span> 🤩
       </div>
       <div className="flex justify-center mt-12">
-        <Link className="bg-hacker text-hlight px-10 py-4 text-xl rounded-full hover:bg-hlight hover:text-hacker border-hacker border-2 " href="/news">Get Started</Link>
+        <Link  href="/news"><div className="bg-hacker text-hlight px-10 py-4 text-xl rounded-full hover:bg-hlight hover:text-hacker border-hacker border-2 "> Get Started</div></Link>
       </div>
     </>
   );

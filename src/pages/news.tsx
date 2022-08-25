@@ -10,9 +10,7 @@ const News: NextPage = () => {
       </div>
       <div className="flex justify-center mt-12">
         <Link
-          className="flex bg-hacker text-hlight px-10 py-4 text-xl rounded-full hover:bg-hlight hover:text-hacker border-hacker border-2 "
-          href="/">
-          <AiOutlineArrowLeft className="mr-5 " size={30} />Back to Home Page
+          href="/"><div className="flex bg-hacker text-hlight px-10 py-4 text-xl rounded-full hover:bg-hlight hover:text-hacker border-hacker border-2 "><AiOutlineArrowLeft className="mr-5 " size={30} />Back to Home Page</div>
         </Link>
       </div>
     </>
