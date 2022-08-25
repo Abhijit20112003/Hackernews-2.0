@@ -5,7 +5,7 @@ const bcrypt = require("bcryptjs");
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const { email, password, password2 } = req.body;
 
-  const exists = await prisma.user.findFirst({
+  const exists:any = await prisma.user.findFirst({
     where: {
       email: {
         equals: email,
@@ -14,10 +14,10 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   });
 
   if (exists) {
-    res.status(400).json({ msg: "User already exists" });
+    res.status(400).send(JSON.stringify({ message: "User already exists" }));
   }
   else if(password !== password2) {
-    res.status(400).json({ msg: "Passwords do not match" });
+    res.status(400).send(JSON.stringify({ message: "Passwords do not match" }));
   }
   else {
     let salt:string = await bcrypt.genSalt(10);
@@ -28,6 +28,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
           password:hashed_password,
         },
       });
-      res.status(201).json(user);
+      res.status(201).json(user.email);
   }
 };
