@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -11,7 +10,7 @@ const Home: NextPage = () => {
         <span className="text-hacker mx-2"> looks</span> 🤩
       </div>
       <div className="flex justify-center mt-12">
-        <a className="bg-hacker text-hlight px-10 py-4 text-xl rounded-full hover:bg-hlight hover:text-hacker border-hacker border-2 " href="/news">Get Started</a>
+        <Link className="bg-hacker text-hlight px-10 py-4 text-xl rounded-full hover:bg-hlight hover:text-hacker border-hacker border-2 " href="/news">Get Started</Link>
       </div>
     </>
   );
