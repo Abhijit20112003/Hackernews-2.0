@@ -5,6 +5,7 @@ import Head from "next/head"
     <>
     <Head>
       <title>HackerNews</title>
+      <meta name="description" content="HackerNews but with better looks" />
     </Head>
     </>
   )
