@@ -1,7 +1,6 @@
 import Navbar from "./Navbar";
-import { FC } from "react";
 
-export default function Layout({ children }: { children: FC }) {
+export default function Layout({ children }: { children: any }) {
   return (
     <>
       <Navbar />
