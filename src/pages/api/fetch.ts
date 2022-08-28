@@ -1,4 +1,9 @@
-import Head from "next/head";
+
+function fetch() {
+
+}
+
+export default fetch
 // // get top stories ids from hacker-news api and  the fetch the story data from the ids                  
 //  async function getServerSideProps(context:any) {
 //     const res = await fetch(`https://hacker-news.firebaseio.com/v0/topstories.json`);
