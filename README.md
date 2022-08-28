@@ -15,7 +15,8 @@ yarn dev
 ```
  Adding Environment Variables
 ```bash
- add MONGODB url to .env file                                                                                                       
+ add Supabase Database url to .env file as 
+ DATABASE_URL = "your Supabase Database url"                                                                                                       
 ```
 Creating Prisma Schema
 ```bash
